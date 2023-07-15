@@ -1,0 +1,23 @@
+
+<a
+  href="https://dev.to/florimondmanca/consuming-apis-in-angular--the-model-adapter-pattern-3fk5">
+    Consuming API's in Angular - The model Adapter Pattern
+</a>
+
+<div>
+  <button (click)="click()">
+    List Users
+  </button>
+
+  <label for="limit">Limit:</label>
+  <input type="number" name="limit" [(ngModel)]="limit">
+</div>
+
+<table>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.username}}</td>
+  </tr>
+</table>
